@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pingostore/features/authentification/controllers.onboarding/onboarding_controller.dart';
+import 'package:pingostore/features/authentification/controllers/onboarding/onboarding_controller.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import '../../../../../utils/constants/colors.dart';

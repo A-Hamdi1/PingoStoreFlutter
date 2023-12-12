@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
+import 'package:get/get_utils/get_utils.dart';
 import 'package:pingostore/common/styles/spacing_styles.dart';
-import 'package:pingostore/utils/constants/image_strings.dart';
 import 'package:pingostore/utils/constants/text_strings.dart';
-
+import '../../../../common/widgets/login_signup/form_divider.dart';
+import '../../../../common/widgets/login_signup/social_buttons.dart';
 import '../../../../utils/constants/sizes.dart';
-import '../../../../utils/helpers/helper_functions.dart';
+import 'widgets/login_form.dart';
+import 'widgets/login_header.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunctions.isDarkMode(context);
 
     return Scaffold(
       body: SingleChildScrollView(
@@ -21,32 +21,14 @@ class LoginScreen extends StatelessWidget {
           child: Column(
             children: [
               //Logo, Title & Sub-Title
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Image(
-                    height: 150,
-                    image: AssetImage(
-                        dark ? TImages.lightAppLogo : TImages.darkAppLogo),
-                  ),
-                  Text(TTexts.loginTitle,style: Theme.of(context).textTheme.headlineMedium,),
-                  SizedBox(height: TSizes.sm,),
-                  Text(TTexts.loginSubTitle,style: Theme.of(context).textTheme.bodyMedium,),
-                ],
-              ),
+              const TLoginHeader(),
               //Form
-              Form(child: Column(
-                children: [
-                  //Email
-                  TextFormField(
-                    decoration: InputDecoration(
-                      prefixIcon: Icon(Iconsax.direct_right),
-                      labelText: TTexts.email,
-                    ),
-                  )
-                  //Password
-                ],
-              ))
+              const TLoginForm(),
+              ///Divider
+              TFormDivider(dividerText: TTexts.orSignInWith.capitalize!),
+              const SizedBox(height: TSizes.spaceBtwSections),
+              ///Footer
+              const TSocialButtons()
             ],
           ),
         ),
@@ -54,3 +36,4 @@ class LoginScreen extends StatelessWidget {
     );
   }
 }
+
