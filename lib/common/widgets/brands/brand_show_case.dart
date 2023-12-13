@@ -21,70 +21,28 @@ class TBrandShowcase extends StatelessWidget {
       margin: const EdgeInsets.only(bottom: TSizes.spaceBtwItems),
       child: Column(
         children: [
+
           /// Brand with Products Count
           const TBrandCard(showBorder: false),
-
+          const SizedBox(height: TSizes.spaceBtwItems,),
           /// Brand Top 3 Product Images
-          Row(
-            children: [
-              Expanded(
-                child: TRoundedContainer(
-                  height: 100,
-                  backgroundColor: THelperFunctions.isDarkMode(context)
-                      ? TColors.darkerGrey
-                      : TColors.light,
-                  margin: const EdgeInsets.only(right: TSizes.sm),
-                  padding: const EdgeInsets.all(TSizes.md),
-                  child: const Image(
-                      fit: BoxFit.contain,
-                      image: AssetImage(TImages.productImage3)),
-                ),
-              ),
-              Expanded(
-                child: TRoundedContainer(
-                  height: 100,
-                  backgroundColor: THelperFunctions.isDarkMode(context)
-                      ? TColors.darkerGrey
-                      : TColors.light,
-                  margin: const EdgeInsets.only(right: TSizes.sm),
-                  padding: const EdgeInsets.all(TSizes.md),
-                  child: const Image(
-                      fit: BoxFit.contain,
-                      image: AssetImage(TImages.productImage3)),
-                ),
-              ),
-              Expanded(
-                child: TRoundedContainer(
-                  height: 100,
-                  backgroundColor: THelperFunctions.isDarkMode(context)
-                      ? TColors.darkerGrey
-                      : TColors.light,
-                  margin: const EdgeInsets.only(right: TSizes.sm),
-                  padding: const EdgeInsets.all(TSizes.md),
-                  child: const Image(
-                      fit: BoxFit.contain,
-                      image: AssetImage(TImages.productImage3)),
-                ),
-              ),
-
-            ],
-          ),
+          Row(children: images.map((image) => brandTopProductImageWidget(image, context)).toList()),
         ],
       ),
     );
   }
 
-  // Widget brandTopProductImageWidget(String image, context) {
-  //   return Expanded(
-  //     child: TRoundedContainer(
-  //       height: 100,
-  //       padding: const EdgeInsets.all(TSizes.md),
-  //       margin: const EdgeInsets.only(right: TSizes.sm),
-  //       backgroundColor: THelperFunctions.isDarkMode(context)
-  //           ? TColors.darkerGrey
-  //           : TColors.light,
-  //       child: Image(fit: BoxFit.contain, image: AssetImage(image)),
-  //     ),
-  //   );
-  // }
+  Widget brandTopProductImageWidget(String image, context) {
+    return Expanded(
+      child: TRoundedContainer(
+        height: 100,
+        padding: const EdgeInsets.all(TSizes.md),
+        margin: const EdgeInsets.only(right: TSizes.sm),
+        backgroundColor: THelperFunctions.isDarkMode(context)
+            ? TColors.darkerGrey
+            : TColors.light,
+        child: Image(fit: BoxFit.contain, image: AssetImage(image)),
+      ),
+    );
+  }
 }

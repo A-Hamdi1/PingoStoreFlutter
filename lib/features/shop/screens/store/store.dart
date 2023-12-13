@@ -5,6 +5,7 @@ import 'package:pingostore/common/widgets/custom_shapes/containers/search_contai
 import 'package:pingostore/common/widgets/layouts/grid_layout.dart';
 import 'package:pingostore/common/widgets/brands/brand_card.dart';
 import 'package:pingostore/common/widgets/texts/section_heading.dart';
+import 'package:pingostore/features/shop/screens/store/widgets/category_tab.dart';
 
 import '../../../../common/widgets/brands/brand_show_case.dart';
 import '../../../../common/widgets/custom_shapes/containers/rounded_container.dart';
@@ -92,14 +93,14 @@ class StoreScreen extends StatelessWidget {
             ];
           },
 
-          /// -- Body -- Tutorial [Section # 3, Video # 8]
+          /// -- Body
           body: const TabBarView(
             children: [
-              TBrandShowcase(images: []),
-              TBrandShowcase(images: []),
-              TBrandShowcase(images: []),
-              TBrandShowcase(images: []),
-              TBrandShowcase(images: []),
+              TCategoryTab(),
+              TCategoryTab(),
+              TCategoryTab(),
+              TCategoryTab(),
+              TCategoryTab(),
             ],
           ),
         ),
