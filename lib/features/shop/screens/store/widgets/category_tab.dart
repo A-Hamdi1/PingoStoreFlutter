@@ -26,6 +26,7 @@ class TCategoryTab extends StatelessWidget {
                 TImages.productImage7,
                 TImages.productImage6,
               ]),
+
               const SizedBox(height: TSizes.spaceBtwItems),
 
               ///Products
