@@ -4,6 +4,7 @@ import 'package:get/get_navigation/get_navigation.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:pingostore/features/authentification/screens/password_configuration/reset_password.dart';
 import 'package:pingostore/features/authentification/screens/signup/signup.dart';
+import 'package:pingostore/navigation_menu.dart';
 
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/text_strings.dart';
@@ -68,7 +69,7 @@ class TLoginForm extends StatelessWidget {
             SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () =>Get.to(()=>const NavigationMenu()),
                     child: const Text(TTexts.signIn))),
             const SizedBox(
               height: TSizes.spaceBtwItems,
