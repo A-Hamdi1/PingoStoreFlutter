@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_instance/get_instance.dart';
 import 'package:pingostore/features/authentification/controllers/onboarding/onboarding_controller.dart';
 import 'package:pingostore/utils/constants/image_strings.dart';
 import 'package:pingostore/utils/constants/text_strings.dart';

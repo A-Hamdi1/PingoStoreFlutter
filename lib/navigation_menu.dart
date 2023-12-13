@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:pingostore/features/shop/screens/home/home.dart';
 import 'package:pingostore/features/shop/screens/store/store.dart';
+import 'package:pingostore/features/shop/screens/wishlist/wishlist.dart';
 import 'package:pingostore/utils/helpers/helper_functions.dart';
 import 'utils/constants/colors.dart';
 
@@ -42,7 +43,7 @@ class NavigationController extends GetxController {
   final screens = [
     const HomeScreen(),
     const StoreScreen(),
-    Container(color: Colors.yellow),
+    const FavouriteScreen(),
     Container(color: Colors.blue)
   ];
 }

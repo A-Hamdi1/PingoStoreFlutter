@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_navigation/get_navigation.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:pingostore/features/authentification/screens/password_configuration/reset_password.dart';
 import 'package:pingostore/features/authentification/screens/signup/signup.dart';

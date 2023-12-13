@@ -7,14 +7,8 @@ import 'package:pingostore/common/widgets/brands/brand_card.dart';
 import 'package:pingostore/common/widgets/texts/section_heading.dart';
 import 'package:pingostore/features/shop/screens/store/widgets/category_tab.dart';
 
-import '../../../../common/widgets/brands/brand_show_case.dart';
-import '../../../../common/widgets/custom_shapes/containers/rounded_container.dart';
-import '../../../../common/widgets/images/t_circular_image.dart';
 import '../../../../common/widgets/products/cart/cart_menu_icon.dart';
-import '../../../../common/widgets/texts/brand_title_with_verified_icon.dart';
 import '../../../../utils/constants/colors.dart';
-import '../../../../utils/constants/enums.dart';
-import '../../../../utils/constants/image_strings.dart';
 import '../../../../utils/constants/sizes.dart';
 import '../../../../utils/helpers/helper_functions.dart';
 

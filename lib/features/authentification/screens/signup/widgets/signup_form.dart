@@ -2,10 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:pingostore/features/authentification/screens/signup/verify_email.dart';
-import '../../../../../utils/constants/colors.dart';
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/text_strings.dart';
-import '../../../../../utils/helpers/helper_functions.dart';
 import 'terms_conditions_checkbox.dart';
 
 class TSignupForm extends StatelessWidget {

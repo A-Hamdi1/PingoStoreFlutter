@@ -29,7 +29,7 @@ class TProductCardVertical extends StatelessWidget {
           boxShadow: [TShadowStyle.verticalProductShadow],
           borderRadius: BorderRadius.circular(TSizes.productImageRadius),
           color: dark ? TColors.darkerGrey : TColors.white,
-        ), // BoxDecoration
+        ),
         child: Column(
           children: [
             /// Thumbnail, Wishlist Button, Discount Tag
@@ -85,6 +85,7 @@ class TProductCardVertical extends StatelessWidget {
               ),
             ),
             const Spacer(),
+            /// -- Price Row
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [

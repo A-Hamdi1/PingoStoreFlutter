@@ -1,7 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_instance/get_instance.dart';
 import 'package:pingostore/features/shop/controllers/home_controller.dart';
 import 'package:pingostore/utils/constants/colors.dart';
 
