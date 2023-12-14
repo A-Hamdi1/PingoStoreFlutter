@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_navigation/get_navigation.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:pingostore/features/personalization/screens/address/address.dart';
 import '../../../../common/widgets/appbar/appbar.dart';
 import '../../../../common/widgets/custom_shapes/containers/primary_header_container.dart';
 import '../../../../common/widgets/list_tiles/settings_menu_tile.dart';
@@ -33,7 +33,8 @@ class SettingsScreen extends StatelessWidget {
                             .apply(color: TColors.white))),
 
                 ///User Profile Card
-                TUserProfileTile(onPressed: ()=>Get.to(()=>const ProfileScreen())),
+                TUserProfileTile(
+                    onPressed: () => Get.to(() => const ProfileScreen())),
                 const SizedBox(height: TSizes.spaceBtwSections),
               ],
             )),
@@ -48,10 +49,12 @@ class SettingsScreen extends StatelessWidget {
                       title: 'Account Settings', showActionButton: false),
                   const SizedBox(height: TSizes.spaceBtwItems),
 
-                  const TSettingsMenuTile(
-                      icon: Iconsax.safe_home,
-                      title: 'My Addresses',
-                      subTitle: 'Set shopping delivery address'),
+                  TSettingsMenuTile(
+                    icon: Iconsax.safe_home,
+                    title: 'My Addresses',
+                    subTitle: 'Set shopping delivery address',
+                    onTap: () => Get.to(() => const UserAddressScreen()),
+                  ),
                   const TSettingsMenuTile(
                       icon: Iconsax.shopping_cart,
                       title: 'My Cart',

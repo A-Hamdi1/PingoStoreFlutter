@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/get_navigation.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:pingostore/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:pingostore/common/widgets/images/t_rounded_image.dart';
 import 'package:pingostore/common/widgets/texts/product_title_text.dart';
+import 'package:pingostore/features/shop/screens/product_details/product_detail.dart';
 import 'package:pingostore/utils/constants/image_strings.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/sizes.dart';
@@ -21,7 +24,7 @@ class TProductCardVertical extends StatelessWidget {
 
     /// Container with side paddings, color, edges, radius and shadow.
     return GestureDetector(
-      onTap: (){},
+      onTap: () => Get.to(() => const ProductDetailScreen()),
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),
@@ -63,7 +66,8 @@ class TProductCardVertical extends StatelessWidget {
                   const Positioned(
                     top: 0,
                     right: 0,
-                    child: TCircularIcon(icon: Iconsax.heart5, color: Colors.red),
+                    child:
+                        TCircularIcon(icon: Iconsax.heart5, color: Colors.red),
                   ),
                 ],
               ),
@@ -79,12 +83,14 @@ class TProductCardVertical extends StatelessWidget {
                   TProductTitleText(
                       title: 'Green Nike Air Shoes', smallSize: true),
                   SizedBox(height: TSizes.spaceBtwItems / 2),
-                  TBrandTitleWithVerifiedIcon(title: 'Nike',),
-
+                  TBrandTitleWithVerifiedIcon(
+                    title: 'Nike',
+                  ),
                 ],
               ),
             ),
             const Spacer(),
+
             /// -- Price Row
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -99,8 +105,7 @@ class TProductCardVertical extends StatelessWidget {
                     color: TColors.dark,
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(TSizes.cardRadiusMd),
-                      bottomRight:
-                      Radius.circular(TSizes.productImageRadius),
+                      bottomRight: Radius.circular(TSizes.productImageRadius),
                     ),
                   ),
                   child: const SizedBox(
@@ -117,5 +122,3 @@ class TProductCardVertical extends StatelessWidget {
     );
   }
 }
-
-
