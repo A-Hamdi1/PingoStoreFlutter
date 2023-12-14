@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "663866079818",
+    "project_id": "pingostore-07",
+    "storage_bucket": "pingostore-07.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:663866079818:android:da41255b983d699d0e84b3",
+        "android_client_info": {
+          "package_name": "com.example.pingostore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "663866079818-j85pm4lfj1ue2e7ko2rb4qg3jf043vdf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pingostore",
+            "certificate_hash": "46affc143de7061f00e55e80ea5914c2d7fac278"
+          }
+        },
+        {
+          "client_id": "663866079818-0nvb0vmd6o3gvjk3kp7baf4s7ulpcrrj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBable0YeNhKiw-_r2vCT23xEDb2WUXHh0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "663866079818-0nvb0vmd6o3gvjk3kp7baf4s7ulpcrrj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "663866079818-30ptg4mc34ok1c6bjeqc79204ohpsi2r.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.pingostore.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
