@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:pingostore/common/widgets/appbar/appbar.dart';
 import 'package:pingostore/common/widgets/appbar/tapbar.dart';
 import 'package:pingostore/common/widgets/custom_shapes/containers/search_container.dart';
@@ -11,6 +12,7 @@ import '../../../../common/widgets/products/cart/cart_menu_icon.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/sizes.dart';
 import '../../../../utils/helpers/helper_functions.dart';
+import '../brand/all_brands.dart';
 
 class StoreScreen extends StatelessWidget {
   const StoreScreen({super.key});
@@ -60,7 +62,7 @@ class StoreScreen extends StatelessWidget {
                       TSectionsHeading(
                           title: 'Featured Brands',
                           showActionButton: true,
-                          onPressed: () {}),
+                          onPressed: ()  => Get.to(() => const AllBrandsScreen()),),
                       const SizedBox(height: TSizes.spaceBtwItems / 1.5),
                       TGridLayout(
                         itemCount: 4,
