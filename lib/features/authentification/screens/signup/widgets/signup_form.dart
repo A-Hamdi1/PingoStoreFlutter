@@ -93,8 +93,8 @@ class TSignupForm extends StatelessWidget {
           ///Password
           Obx(
             ()=> TextFormField(
-              controller: controller.password,
               validator: (value) => TValidator.validatePassword(value),
+              controller: controller.password,
               obscureText: controller.hidePassword.value,
               decoration: InputDecoration(
                 labelText: TTexts.password,
