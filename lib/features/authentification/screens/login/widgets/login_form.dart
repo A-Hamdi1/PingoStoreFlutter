@@ -2,13 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:pingostore/features/authentification/controllers/login/login_controller.dart';
-import 'package:pingostore/features/authentification/screens/password_configuration/reset_password.dart';
 import 'package:pingostore/features/authentification/screens/signup/signup.dart';
-import 'package:pingostore/navigation_menu.dart';
 import 'package:pingostore/utils/validators/validation.dart';
 
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/text_strings.dart';
+import '../../password_configuration/forget_password.dart';
 
 class TLoginForm extends StatelessWidget {
   const TLoginForm({

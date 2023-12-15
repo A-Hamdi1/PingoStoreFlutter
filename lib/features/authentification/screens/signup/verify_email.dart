@@ -1,10 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pingostore/common/widgets/success_screen/success_screen.dart';
 import 'package:pingostore/data/repositories/authentification/authentification_repository.dart';
 import 'package:pingostore/features/authentification/controllers/signup/verify_email_controller.dart';
-import 'package:pingostore/features/authentification/screens/login/login.dart';
 import 'package:pingostore/utils/constants/image_strings.dart';
 import 'package:pingostore/utils/helpers/helper_functions.dart';
 import '../../../../utils/constants/sizes.dart';
