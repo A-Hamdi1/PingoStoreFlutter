@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pingostore/common/widgets/products/sortable/sortable_products.dart';
 import 'package:pingostore/features/shop/screens/brand/brand_products.dart';
 import '../../../../common/widgets/appbar/appbar.dart';
 import '../../../../common/widgets/brands/brand_card.dart';

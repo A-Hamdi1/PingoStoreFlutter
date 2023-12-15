@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 import '../../../../common/widgets/appbar/appbar.dart';
-import '../../../../common/widgets/layouts/grid_layout.dart';
-import '../../../../common/widgets/products/product_cards/product_card_vertical.dart';
 import '../../../../common/widgets/products/sortable/sortable_products.dart';
 import '../../../../utils/constants/sizes.dart';
 

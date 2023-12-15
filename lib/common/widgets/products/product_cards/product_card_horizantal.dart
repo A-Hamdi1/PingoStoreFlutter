@@ -7,7 +7,6 @@ import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/image_strings.dart';
 import '../../../../utils/constants/sizes.dart';
 import '../../../../utils/helpers/helper_functions.dart';
-import '../../../styles/shadows.dart';
 import '../../icons/t_circular_icon.dart';
 import '../../images/t_rounded_image.dart';
 import '../../texts/brand_title_with_verified_icon.dart';

@@ -1,15 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:pingostore/common/widgets/appbar/appbar.dart';
-import 'package:pingostore/common/widgets/custom_shapes/containers/rounded_container.dart';
-import 'package:pingostore/features/shop/screens/product_reviews/widgets/progress_indicator_and_rating.dart';
 import 'package:pingostore/features/shop/screens/product_reviews/widgets/rating_progress_indicator.dart';
 import 'package:pingostore/features/shop/screens/product_reviews/widgets/user_review_card.dart';
-import 'package:pingostore/utils/device/device_utility.dart';
 
 import '../../../../common/widgets/products/ratings/rating_indicator.dart';
-import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/image_strings.dart';
 import '../../../../utils/constants/sizes.dart';
 
