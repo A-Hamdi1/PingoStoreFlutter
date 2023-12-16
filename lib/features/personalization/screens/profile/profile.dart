@@ -8,7 +8,7 @@ import '../../../../common/widgets/images/t_circular_image.dart';
 import '../../../../common/widgets/texts/section_heading.dart';
 import '../../../../utils/constants/image_strings.dart';
 import '../../../../utils/constants/sizes.dart';
-import '../../../../utils/theme/shimmer.dart';
+import '../../../../common/widgets/shimmers/shimmer.dart';
 import '../../controllers/user_controller.dart';
 import 'widgets/profile_menu.dart';
 
