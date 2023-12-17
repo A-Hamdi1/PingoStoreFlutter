@@ -10,7 +10,7 @@ import '../../../../../utils/constants/sizes.dart';
 
 class TCategoryTab extends StatelessWidget {
   const TCategoryTab({super.key, required this.category});
-final CategoryModel category;
+  final CategoryModel category;
   @override
   Widget build(BuildContext context) {
     return ListView(
@@ -22,6 +22,11 @@ final CategoryModel category;
           child: Column(
             children: [
               ///Brands
+              const TBrandShowcase(images: [
+                TImages.productImage2,
+                TImages.productImage7,
+                TImages.productImage6,
+              ]),
               const TBrandShowcase(images: [
                 TImages.productImage2,
                 TImages.productImage7,

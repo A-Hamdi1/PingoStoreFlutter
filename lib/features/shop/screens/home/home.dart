@@ -27,9 +27,11 @@ class HomeScreen extends StatelessWidget {
                   ///AppBar
                   THomeAppBar(),
                   SizedBox(height: TSizes.spaceBtwSections),
+
                   ///SearchBar
                   TSearchContainer(text: 'Search in Store'),
                   SizedBox(height: TSizes.spaceBtwSections),
+
                   ///Categories
                   Padding(
                     padding: EdgeInsets.only(left: TSizes.defaultSpace),
@@ -42,34 +44,30 @@ class HomeScreen extends StatelessWidget {
                           textColor: Colors.white,
                         ),
                         SizedBox(height: TSizes.spaceBtwItems),
+
                         ///--Categories List
                         THomeCategories(),
                       ],
                     ),
                   ),
                   SizedBox(height: TSizes.spaceBtwSections),
-
                 ],
               ),
             ),
+
             /// Body
             Padding(
               padding: const EdgeInsets.all(TSizes.defaultSpace),
               child: Column(
                 children: [
-                  const TPromoSlider(
-                    banners: [
-                      TImages.promoBanner1,
-                      TImages.promoBanner2,
-                      TImages.promoBanner3,
-                    ],
-                  ),
+                  const TPromoSlider(),
                   const SizedBox(height: TSizes.spaceBtwSections),
 
                   ///Heading
-                  TSectionsHeading(title: 'Popular Products', onPressed: ()=>Get.to(() => const AllProducts())),
+                  TSectionsHeading(
+                      title: 'Popular Products',
+                      onPressed: () => Get.to(() => const AllProducts())),
                   const SizedBox(height: TSizes.spaceBtwItems),
-
 
                   /// -- Popular Products
                   TGridLayout(

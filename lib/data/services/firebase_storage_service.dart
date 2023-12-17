@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:io';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/services.dart';
@@ -17,7 +18,7 @@ class TFirebaseStorageService extends GetxController {
           .asUint8List(byteData.offsetInBytes, byteData.lengthInBytes);
       return imageData;
     } catch (e) {
-// Handle exceptions gracefully
+      // Handle exceptions gracefully
       throw 'Error loading image data: $e';
     }
   }
