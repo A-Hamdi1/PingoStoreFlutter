@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:pingostore/features/personalization/controllers/user_controller.dart';
-
 import '../../../data/repositories/user/user_repository.dart';
 import '../../../utils/constants/image_strings.dart';
 import '../../../utils/helpers/network_manager.dart';

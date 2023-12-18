@@ -24,7 +24,9 @@ class NavigationMenu extends StatelessWidget {
           onDestinationSelected: (index) =>
               controller.selectedIndex.value = index,
           backgroundColor: darkMode ? TColors.black : Colors.white,
-          indicatorColor: darkMode ? TColors.white.withOpacity(0.1) : TColors.black.withOpacity(0.1),
+          indicatorColor: darkMode
+              ? TColors.white.withOpacity(0.1)
+              : TColors.black.withOpacity(0.1),
           destinations: const [
             NavigationDestination(icon: Icon(Iconsax.home), label: 'Home'),
             NavigationDestination(icon: Icon(Iconsax.shop), label: 'Store'),
@@ -33,7 +35,7 @@ class NavigationMenu extends StatelessWidget {
           ],
         ),
       ),
-      body: Obx(()=> controller.screens[controller.selectedIndex.value]),
+      body: Obx(() => controller.screens[controller.selectedIndex.value]),
     );
   }
 }

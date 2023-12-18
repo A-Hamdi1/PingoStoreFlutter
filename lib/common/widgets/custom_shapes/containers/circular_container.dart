@@ -17,7 +17,7 @@ class TCircularContainer extends StatelessWidget {
   final double? height;
   final double radius;
   final double padding;
-  final EdgeInsets ?margin;
+  final EdgeInsets? margin;
   final Widget? child;
   final Color backgroundColor;
 

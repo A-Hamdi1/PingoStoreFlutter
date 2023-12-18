@@ -1,6 +1,4 @@
-
 class TValidator {
-
   // Empty Text Validation
   static String? validateEmptyText(String? fieldName, String? value) {
     if (value == null || value.isEmpty) {
@@ -66,5 +64,4 @@ class TValidator {
 
     return null;
   }
-
 }

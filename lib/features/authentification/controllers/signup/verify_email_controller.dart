@@ -1,9 +1,7 @@
 import 'dart:async';
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
 import 'package:pingostore/data/repositories/authentification/authentification_repository.dart';
-
 import '../../../../common/widgets/success_screen/success_screen.dart';
 import '../../../../utils/constants/image_strings.dart';
 import '../../../../utils/constants/text_strings.dart';

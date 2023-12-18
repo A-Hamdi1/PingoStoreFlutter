@@ -91,8 +91,8 @@ class AddNewAddressScreen extends StatelessWidget {
                 const SizedBox(height: TSizes.defaultSpace),
                 SizedBox(
                     width: double.infinity,
-                    child:
-                        ElevatedButton(onPressed: () {}, child: const Text('Save')))
+                    child: ElevatedButton(
+                        onPressed: () {}, child: const Text('Save')))
               ],
             ),
           ),

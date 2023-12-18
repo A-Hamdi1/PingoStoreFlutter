@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../../utils/constants/sizes.dart';
 
 class TRoundedImage extends StatelessWidget {
@@ -15,7 +14,7 @@ class TRoundedImage extends StatelessWidget {
     this.fit = BoxFit.contain,
     this.backgroundColor,
     this.isNetworkImage = false,
-    this.borderRadius=TSizes.md,
+    this.borderRadius = TSizes.md,
   });
 
   final double? width, height;

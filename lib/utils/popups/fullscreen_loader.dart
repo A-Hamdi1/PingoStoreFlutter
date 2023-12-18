@@ -36,9 +36,11 @@ class TFullScreenLoader {
       ),
     );
   }
+
   /// Stop the currently open loading dialog.
   /// This method doesn't return anything.
   static stopLoading() {
-    Navigator.of(Get.overlayContext!).pop(); //Close the dialog using the Navigator
+    Navigator.of(Get.overlayContext!)
+        .pop(); //Close the dialog using the Navigator
   }
 }

@@ -6,13 +6,16 @@ class BannerModel {
   final bool active;
 
   BannerModel(
-      {required this.imageUrl, required this.targetScreen, required this.active});
+      {required this.imageUrl,
+      required this.targetScreen,
+      required this.active});
 
   Map<String, dynamic> toJson() {
     return {
       'ImageUrl': imageUrl,
       'TargetScreen': targetScreen,
-      'Active': active,};
+      'Active': active,
+    };
   }
 
   factory BannerModel.fromSnapshot(DocumentSnapshot snapshot) {
@@ -21,7 +24,6 @@ class BannerModel {
       imageUrl: data['ImageUrl'] ?? '',
       targetScreen: data['TargetScreen'] ?? '',
       active: data['Active'] ?? false,
-
     );
   }
 }

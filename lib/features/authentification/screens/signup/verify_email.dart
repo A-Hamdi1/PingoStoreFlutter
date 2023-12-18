@@ -15,14 +15,15 @@ class VerifyEmailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final controller = Get.put( VerifyEmailController());
+    final controller = Get.put(VerifyEmailController());
 
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false, // delete default back arrow
         actions: [
           IconButton(
-              onPressed: () => Get.offAll(() => AuthenticationRepository.instance.logout()),
+              onPressed: () =>
+                  Get.offAll(() => AuthenticationRepository.instance.logout()),
               icon: const Icon(CupertinoIcons.clear))
         ],
       ),
@@ -44,7 +45,7 @@ class VerifyEmailScreen extends StatelessWidget {
                   style: Theme.of(context).textTheme.headlineMedium,
                   textAlign: TextAlign.center),
               const SizedBox(height: TSizes.spaceBtwItems),
-              Text(email?? '',
+              Text(email ?? '',
                   style: Theme.of(context).textTheme.labelLarge,
                   textAlign: TextAlign.center),
               const SizedBox(height: TSizes.spaceBtwItems),
@@ -58,13 +59,15 @@ class VerifyEmailScreen extends StatelessWidget {
               SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
-                      onPressed: () => controller.checkEmailVerificationStatus(),
+                      onPressed: () =>
+                          controller.checkEmailVerificationStatus(),
                       child: const Text(TTexts.tContinue))),
               const SizedBox(height: TSizes.spaceBtwItems),
               SizedBox(
                   width: double.infinity,
                   child: TextButton(
-                      onPressed: () =>controller.sendEmailVerification(), child: const Text(TTexts.resendEmail))),
+                      onPressed: () => controller.sendEmailVerification(),
+                      child: const Text(TTexts.resendEmail))),
             ],
           ), // Column
         ), // Padding

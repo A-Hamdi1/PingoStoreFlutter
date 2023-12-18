@@ -8,7 +8,6 @@ import 'package:pingostore/common/widgets/brands/brand_card.dart';
 import 'package:pingostore/common/widgets/texts/section_heading.dart';
 import 'package:pingostore/features/shop/controllers/category_controller.dart';
 import 'package:pingostore/features/shop/screens/store/widgets/category_tab.dart';
-
 import '../../../../common/widgets/products/cart/cart_menu_icon.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/sizes.dart';
@@ -89,10 +88,14 @@ class StoreScreen extends StatelessWidget {
 
           /// -- Body
           body: TabBarView(
-            children: categories.map((category) => TCategoryTab(category: category,)).toList(),
-            ),
+            children: categories
+                .map((category) => TCategoryTab(
+                      category: category,
+                    ))
+                .toList(),
           ),
         ),
+      ),
     );
   }
 }

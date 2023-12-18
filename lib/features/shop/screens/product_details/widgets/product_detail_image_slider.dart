@@ -4,7 +4,6 @@ import 'package:pingostore/utils/constants/colors.dart';
 import 'package:pingostore/utils/constants/image_strings.dart';
 import 'package:pingostore/utils/constants/sizes.dart';
 import 'package:pingostore/utils/helpers/helper_functions.dart';
-
 import '../../../../../common/widgets/custom_shapes/curved_edges/curved_edges_widget.dart';
 
 class TProductImageSlider extends StatelessWidget {

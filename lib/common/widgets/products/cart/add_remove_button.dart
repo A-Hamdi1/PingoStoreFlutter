@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-
 import 'package:pingostore/common/widgets/icons/t_circular_icon.dart';
-
 import 'package:pingostore/utils/constants/colors.dart';
 import 'package:pingostore/utils/constants/sizes.dart';
 import 'package:pingostore/utils/helpers/helper_functions.dart';

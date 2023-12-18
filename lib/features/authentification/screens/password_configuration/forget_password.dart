@@ -33,14 +33,20 @@ class ForgetPassword extends StatelessWidget {
               child: TextFormField(
                 controller: controller.email,
                 validator: TValidator.validateEmail,
-                decoration: const InputDecoration(labelText: TTexts.email, prefixIcon: Icon(Iconsax.direct_right)),
+                decoration: const InputDecoration(
+                    labelText: TTexts.email,
+                    prefixIcon: Icon(Iconsax.direct_right)),
               ),
             ),
             const SizedBox(height: TSizes.spaceBtwSections),
+
             /// Submit Button
             SizedBox(
               width: double.infinity,
-              child: ElevatedButton(onPressed: () => controller.sendPasswordResetEmail(), child: const Text(TTexts.submit)),),
+              child: ElevatedButton(
+                  onPressed: () => controller.sendPasswordResetEmail(),
+                  child: const Text(TTexts.submit)),
+            ),
           ],
         ),
       ),

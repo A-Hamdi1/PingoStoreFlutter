@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:pingostore/features/shop/screens/cart/cart.dart';
 import 'package:pingostore/utils/helpers/helper_functions.dart';
-
 import '../../../../utils/constants/colors.dart';
 
 class TCartCounterIcon extends StatelessWidget {

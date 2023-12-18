@@ -28,14 +28,13 @@ class THomeAppBar extends StatelessWidget {
             if (controller.profileLoading.value) {
               // Display a shimmer loader while user profile is being Loaded
               return const TShimmerEffect(width: 80, height: 15);
-            }else{
+            } else {
               return Text(controller.user.value.fullName,
                   style: Theme.of(context)
                       .textTheme
                       .headlineSmall!
                       .apply(color: TColors.white));
             }
-
           }),
         ],
       ),

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../../../common/widgets/appbar/appbar.dart';
 import '../../../../common/widgets/brands/brand_card.dart';
 import '../../../../common/widgets/products/sortable/sortable_products.dart';

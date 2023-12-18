@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-
 import '../../screens/login/login.dart';
 
 class OnBoardingController extends GetxController {
@@ -27,7 +26,8 @@ class OnBoardingController extends GetxController {
       final storage = GetStorage();
 
       if (kDebugMode) {
-        print('========================== GET STORAGE Next Button ==============================');
+        print(
+            '========================== GET STORAGE Next Button ==============================');
         print(storage.read('IsFirstTime'));
       }
 

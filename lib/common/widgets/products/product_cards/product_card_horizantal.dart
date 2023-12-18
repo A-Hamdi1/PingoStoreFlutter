@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:pingostore/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:pingostore/common/widgets/texts/product_price_text.dart';
-
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/image_strings.dart';
 import '../../../../utils/constants/sizes.dart';
@@ -74,7 +73,7 @@ class TProductCardHorizontal extends StatelessWidget {
           ),
 
           ///Details
-           SizedBox(
+          SizedBox(
             width: 162,
             child: Padding(
               padding: const EdgeInsets.only(top: TSizes.sm, left: TSizes.sm),
@@ -96,23 +95,23 @@ class TProductCardHorizontal extends StatelessWidget {
                     children: [
                       const Flexible(child: TProductPriceText(price: '256.0 ')),
 
-
-
                       /// Add to cart
                       Container(
                         decoration: const BoxDecoration(
                           color: TColors.dark,
                           borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(TSizes.cardRadiusMd),
-                            bottomRight: Radius.circular(TSizes.productImageRadius),
-                          ), // BorderRadius.only
-                        ),// BoxDecoration
+                            bottomRight:
+                                Radius.circular(TSizes.productImageRadius),
+                          ),
+                        ),
                         child: const SizedBox(
-                      width: TSizes.iconLg * 1.2,
-                        height: TSizes.iconLg * 1.2,
-                        child: Center(child: Icon(Iconsax.add, color: TColors.white)),
-                        ), // SizedBox
-                      ), //
+                          width: TSizes.iconLg * 1.2,
+                          height: TSizes.iconLg * 1.2,
+                          child: Center(
+                              child: Icon(Iconsax.add, color: TColors.white)),
+                        ),
+                      ),
                     ],
                   ),
                 ],

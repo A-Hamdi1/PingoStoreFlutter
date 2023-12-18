@@ -1,7 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-
 import '../../../features/shop/models/category_model.dart';
 import '../../../utils/exceptions/firebase_exceptions.dart';
 import '../../../utils/exceptions/platform_exceptions.dart';
@@ -17,7 +16,9 @@ class CategoryRepository extends GetxController {
   Future<List<CategoryModel>> getAllCategories() async {
     try {
       final snapshot = await _db.collection('Categories').get();
-      final list = snapshot.docs.map((document) => CategoryModel.fromSnapshot(document)).toList();
+      final list = snapshot.docs
+          .map((document) => CategoryModel.fromSnapshot(document))
+          .toList();
       return list;
     } on FirebaseException catch (e) {
       throw TFirebaseException(e.code).message;
@@ -33,9 +34,9 @@ class CategoryRepository extends GetxController {
   /// Upload Categories to the Cloud Firebase
   Future<void> uploadDummyData(List<CategoryModel> categories) async {
     try {
-        // Upload all the Categories along with their Images
+      // Upload all the Categories along with their Images
       final storage = Get.put(TFirebaseStorageService());
-        // Loop through each category
+      // Loop through each category
       for (var category in categories) {
         // Get ImageData link from the local assets
         final file = await storage.getImageDataFromAssets(category.image);

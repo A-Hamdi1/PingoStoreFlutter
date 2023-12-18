@@ -20,14 +20,21 @@ class SignupScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               /// Title
-              Text(TTexts.signupTitle, style: Theme.of(context).textTheme.headlineMedium),
+              Text(TTexts.signupTitle,
+                  style: Theme.of(context).textTheme.headlineMedium),
               const SizedBox(height: TSizes.spaceBtwSections),
+
               /// Form
               const TSignupForm(),
+
               ///Divider
-              const SizedBox(height: TSizes.spaceBtwSections,),
+              const SizedBox(
+                height: TSizes.spaceBtwSections,
+              ),
               TFormDivider(dividerText: TTexts.orSignUpWith.capitalize!),
-              const SizedBox(height: TSizes.spaceBtwSections,),
+              const SizedBox(
+                height: TSizes.spaceBtwSections,
+              ),
               const TSocialButtons(),
             ],
           ),
@@ -36,4 +43,3 @@ class SignupScreen extends StatelessWidget {
     );
   }
 }
-

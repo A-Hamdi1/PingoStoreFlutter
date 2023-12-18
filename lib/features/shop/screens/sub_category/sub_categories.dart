@@ -46,7 +46,6 @@ class SubCategoriesScreen extends StatelessWidget {
 
                   const SizedBox(height: TSizes.spaceBtwSections),
 
-
                   TSectionsHeading(title: 'Track Suits', onPressed: () {}),
                   const SizedBox(height: TSizes.spaceBtwItems / 2),
 
@@ -56,16 +55,16 @@ class SubCategoriesScreen extends StatelessWidget {
                       itemCount: 4,
                       scrollDirection: Axis.horizontal,
                       separatorBuilder: (context, index) =>
-                      const SizedBox(width: TSizes.spaceBtwItems),
+                          const SizedBox(width: TSizes.spaceBtwItems),
                       itemBuilder: (context, index) =>
-                      const TProductCardHorizontal(),
+                          const TProductCardHorizontal(),
                     ),
                   ),
 
                   const SizedBox(height: TSizes.spaceBtwSections),
 
-
-                  TSectionsHeading(title: 'Sports Equipments', onPressed: () {}),
+                  TSectionsHeading(
+                      title: 'Sports Equipments', onPressed: () {}),
                   const SizedBox(height: TSizes.spaceBtwItems / 2),
 
                   SizedBox(
@@ -74,13 +73,11 @@ class SubCategoriesScreen extends StatelessWidget {
                       itemCount: 4,
                       scrollDirection: Axis.horizontal,
                       separatorBuilder: (context, index) =>
-                      const SizedBox(width: TSizes.spaceBtwItems),
+                          const SizedBox(width: TSizes.spaceBtwItems),
                       itemBuilder: (context, index) =>
-                      const TProductCardHorizontal(),
+                          const TProductCardHorizontal(),
                     ),
                   ),
-
-
                 ],
               ),
             ],

@@ -160,14 +160,13 @@ class UserController extends GetxController {
   /// Upload Profile Image
   uploadUserProfilePicture() async {
     try {
-
       final image = await ImagePicker().pickImage(
           source: ImageSource.gallery,
           imageQuality: 70,
           maxHeight: 512,
           maxWidth: 512);
       if (image != null) {
-        imageUploading.value=true;
+        imageUploading.value = true;
         // Upload Image
         final imageUrl =
             await userRepository.uploadImage('Users/Images/Profile/', image);
@@ -184,8 +183,8 @@ class UserController extends GetxController {
     } catch (e) {
       TLoaders.errorSnackBar(
           title: 'OhSnap', message: 'Something went wrong: $e');
-    }finally{
-      imageUploading.value=false;
+    } finally {
+      imageUploading.value = false;
     }
   }
 }

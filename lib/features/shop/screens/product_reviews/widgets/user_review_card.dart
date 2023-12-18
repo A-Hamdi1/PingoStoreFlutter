@@ -12,7 +12,8 @@ class UserReviewCard extends StatelessWidget {
       required this.image,
       required this.username,
       required this.rate,
-      required this.date, required this.dateStore})
+      required this.date,
+      required this.dateStore})
       : super(key: key);
   final String image;
   final String username;

@@ -16,7 +16,8 @@ class TPrimaryHeaderContainer extends StatelessWidget {
     return TCurvedEdgesWidget(
       child: Container(
         color: TColors.primary,
-        /// -- [size.isFinite': is not true] Error -> Read README.md file at [DESIGN ERRORS] # 1
+
+        /// -- [size.isFinite': is not true] Error
         child: Stack(
           children: [
             /// -- Background Custom Shapes

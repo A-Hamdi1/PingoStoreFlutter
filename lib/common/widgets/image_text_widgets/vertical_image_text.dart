@@ -35,10 +35,12 @@ class TVerticalImageText extends StatelessWidget {
             TCircularImage(
               image: image,
               fit: BoxFit.fitWidth,
-              padding: TSizes.sm*1.4,
+              padding: TSizes.sm * 1.4,
               isNetworkImage: isNetworkImage,
               backgroundColor: backgroundColor,
-              overlayColor: THelperFunctions.isDarkMode(context)?TColors.light: TColors.dark,
+              overlayColor: THelperFunctions.isDarkMode(context)
+                  ? TColors.light
+                  : TColors.dark,
             ),
 
             ///Text

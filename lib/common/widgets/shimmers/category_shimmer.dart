@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:pingostore/common/widgets/shimmers/shimmer.dart';
-
 import '../../../utils/constants/sizes.dart';
 
 class TCategoryShimmer extends StatelessWidget {
@@ -28,6 +27,7 @@ class TCategoryShimmer extends StatelessWidget {
               /// Image
               TShimmerEffect(width: 55, height: 55, radius: 55),
               SizedBox(height: TSizes.spaceBtwItems / 2),
+
               /// Text
               TShimmerEffect(width: 55, height: 8),
             ],

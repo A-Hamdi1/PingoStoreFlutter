@@ -10,6 +10,7 @@ class TSingleAddress extends StatelessWidget {
     super.key,
     required this.selectedAddress,
   });
+
   final bool selectedAddress;
 
   @override

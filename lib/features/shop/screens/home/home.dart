@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 import 'package:pingostore/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:pingostore/features/shop/screens/home/widgets/home_categories.dart';
 import 'package:pingostore/features/shop/screens/home/widgets/promo_slider.dart';
-import 'package:pingostore/utils/constants/image_strings.dart';
 import '../../../../common/widgets/custom_shapes/containers/primary_header_container.dart';
 import '../../../../common/widgets/custom_shapes/containers/search_container.dart';
 import '../../../../common/widgets/layouts/grid_layout.dart';

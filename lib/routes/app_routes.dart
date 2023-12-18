@@ -1,6 +1,5 @@
 import 'package:get/get.dart';
 import 'package:pingostore/routes/routes.dart';
-
 import '../features/authentification/screens/login/login.dart';
 import '../features/authentification/screens/onboarding/onboarding.dart';
 import '../features/authentification/screens/password_configuration/forget_password.dart';

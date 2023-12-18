@@ -16,8 +16,7 @@ class LoginController extends GetxController {
   final email = TextEditingController();
   final password = TextEditingController();
   GlobalKey<FormState> loginFormKey = GlobalKey<FormState>();
-  final userController=Get.put(UserController());
-
+  final userController = Get.put(UserController());
 
   @override
   void onInit() {
@@ -71,14 +70,17 @@ class LoginController extends GetxController {
   Future<void> googleSignIn() async {
     try {
       // Start Loading
-      TFullScreenLoader.openLoadingDialog('Logging you in ... ', TImages.docerAnimation);
+      TFullScreenLoader.openLoadingDialog(
+          'Logging you in ... ', TImages.docerAnimation);
       // Check Internet Connectivity
       final isConnected = await NetworkManager.instance.isConnected();
-      if (!isConnected) { TFullScreenLoader.stopLoading();
+      if (!isConnected) {
+        TFullScreenLoader.stopLoading();
         return;
       }
       // Google Authentication
-      final userCredentials =await AuthenticationRepository.instance. signInWithGoogle();
+      final userCredentials =
+          await AuthenticationRepository.instance.signInWithGoogle();
 
       // Save User Record
       await userController.saveUserRecord(userCredentials);

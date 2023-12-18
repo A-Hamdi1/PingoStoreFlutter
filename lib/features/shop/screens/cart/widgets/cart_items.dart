@@ -6,6 +6,7 @@ import 'package:pingostore/utils/constants/sizes.dart';
 
 class TCartItems extends StatelessWidget {
   const TCartItems({super.key, this.showAddRemoveButtons = true});
+
   final bool showAddRemoveButtons;
 
   @override
