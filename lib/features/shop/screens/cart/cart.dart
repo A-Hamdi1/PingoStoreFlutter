@@ -5,7 +5,6 @@ import 'package:pingostore/common/widgets/texts/product_price_text.dart';
 import 'package:pingostore/utils/constants/sizes.dart';
 import 'package:pingostore/common/widgets/products/cart/cart_item.dart';
 import 'package:pingostore/common/widgets/appbar/appbar.dart';
-
 import '../checkout/checkout.dart';
 
 class CartScreen extends StatelessWidget {
