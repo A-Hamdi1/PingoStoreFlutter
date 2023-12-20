@@ -12,8 +12,13 @@ import 'package:pingostore/utils/constants/sizes.dart';
 import 'package:readmore/readmore.dart';
 import 'package:pingostore/utils/helpers/helper_functions.dart';
 
+import '../../models/product_model.dart';
+
 class ProductDetailScreen extends StatelessWidget {
-  const ProductDetailScreen({super.key});
+  const ProductDetailScreen({super.key, required this.product, });
+
+  final ProductModel product;
+
 
   @override
   Widget build(BuildContext context) {
