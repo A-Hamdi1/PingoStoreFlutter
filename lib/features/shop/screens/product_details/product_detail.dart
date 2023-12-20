@@ -11,14 +11,15 @@ import 'package:pingostore/features/shop/screens/product_reviews/product_reviews
 import 'package:pingostore/utils/constants/sizes.dart';
 import 'package:readmore/readmore.dart';
 import 'package:pingostore/utils/helpers/helper_functions.dart';
-
 import '../../models/product_model.dart';
 
 class ProductDetailScreen extends StatelessWidget {
-  const ProductDetailScreen({super.key, required this.product, });
+  const ProductDetailScreen({
+    super.key,
+    required this.product,
+  });
 
   final ProductModel product;
-
 
   @override
   Widget build(BuildContext context) {
@@ -83,7 +84,6 @@ class ProductDetailScreen extends StatelessWidget {
                               Get.to(() => const ProductReviewsScreen())),
                     ],
                   ),
-
                   const SizedBox(height: TSizes.spaceBtwSections),
                 ],
               ),

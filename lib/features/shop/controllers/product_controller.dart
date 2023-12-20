@@ -1,5 +1,4 @@
 import 'package:get/get.dart';
-
 import '../../../data/repositories/product/product_repository.dart';
 import '../../../utils/constants/enums.dart';
 import '../../../utils/popups/loader.dart';

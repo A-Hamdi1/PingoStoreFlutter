@@ -8,7 +8,6 @@ import 'package:pingostore/common/widgets/texts/product_title_text.dart';
 import 'package:pingostore/features/shop/controllers/product_controller.dart';
 import 'package:pingostore/features/shop/models/product_model.dart';
 import 'package:pingostore/features/shop/screens/product_details/product_detail.dart';
-import 'package:pingostore/utils/constants/image_strings.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/enums.dart';
 import '../../../../utils/constants/sizes.dart';
