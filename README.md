@@ -126,9 +126,6 @@ Pour utiliser Firebase, vous devez configurer votre propre projet Firebase et re
 2. Ajoutez les applications (Android, iOS, Web) à votre projet Firebase
 3. Téléchargez et remplacez les fichiers de configuration
 
-## 📝 Licence
-
-Ce projet est sous licence MIT - voir le fichier LICENSE pour plus de détails.
 
 ## 📞 Contact
 
